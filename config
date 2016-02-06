@@ -1,0 +1,11 @@
+[twtxt]
+nick = myles
+twtfile = ~/Documents/twtxt.txt
+post_tweet_hook = "s3cmd --acl-public put {twtfile} s3://twtxt.mylesb.ca/twtxt.txt"
+use_pager = True
+check_following = True
+
+[following]
+myles-lab = http://mylesbraithwaite.org/twtxt.txt
+buckket = http://buckket.org/twtxt.txt
+
