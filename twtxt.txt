@@ -2,3 +2,4 @@
 2016-02-05T19:53:36.630236+00:00	Playing around with twtxt, yet another decentralised microblogging service that was apperently designed for hackers. https://github.com/buckket/twtxt
 2016-02-05T21:52:45.279691+00:00	What happens when you attach a string to an iPhone and spin it around your head while your skiing https://www.youtube.com/watch?v=aqncOP7OzMg
 2016-02-06T21:56:42.473203+00:00	Made a web based viewer of my twtxt feed http://web.twtxt.mylesb.ca/
+2016-02-08T11:27:05-05:00	Wrote a twitter to twtxt proxy for my twitter tweets http://twitter.twtxt.mylesb.ca/ (you can view the source here https://github.com/myles/twitter.twtxt.mylesb.ca).

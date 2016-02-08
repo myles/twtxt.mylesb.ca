@@ -1,11 +1,13 @@
 [twtxt]
 nick = myles
-twtfile = ~/Documents/twtxt.txt
-post_tweet_hook = "s3cmd --acl-public put {twtfile} s3://twtxt.mylesb.ca/twtxt.txt"
-use_pager = True
+twtfile = ~/Documents/twtxt/twtxt.txt
+twturl = https://twtxt.mylesb.ca/
 check_following = True
+use_pager = True
+post_tweet_hook = "s3cmd --acl-public put {twtfile} s3://twtxt.mylesb.ca/twtxt.txt"
 
 [following]
 myles-lab = http://mylesbraithwaite.org/twtxt.txt
 buckket = http://buckket.org/twtxt.txt
+mylesb#twitter = https://guarded-wildwood-61282.herokuapp.com/
 
