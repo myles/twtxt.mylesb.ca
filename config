@@ -7,7 +7,15 @@ use_pager = True
 post_tweet_hook = "s3cmd --acl-public put {twtfile} s3://twtxt.mylesb.ca/twtxt.txt"
 
 [following]
-myles-lab = http://mylesbraithwaite.org/twtxt.txt
 buckket = http://buckket.org/twtxt.txt
-mylesb#twitter = https://guarded-wildwood-61282.herokuapp.com/
+twtxt = https://buckket.org/twtxt_news.txt
+xena = https://xena.greedo.xeserv.us/files/xena.txt
 
+[following/egocentric]
+mylesb#twitter = http://twitter.twtxt.mylesb.ca/
+youretheworst = https://youaretheworst.today/twtxt.txt
+myles-red = http://myles.red/twtxt.txt
+myles-lab = http://mylesbraithwaite.org/twtxt.txt
+
+[following/user-groups]
+gtalug = https://gtalug.org/twtxt.txt

@@ -4,3 +4,4 @@
 2016-02-06T21:56:42.473203+00:00	Made a web based viewer of my twtxt feed http://web.twtxt.mylesb.ca/
 2016-02-08T11:27:05-05:00	Wrote a twitter to twtxt proxy for my twitter tweets http://twitter.twtxt.mylesb.ca/ (you can view the source here https://github.com/myles/twitter.twtxt.mylesb.ca).
 2016-02-08T11:43:24-05:00	git-blame-someone-else https://github.com/jayphelps/git-blame-someone-else (when you want to blame someone else for you bad code).
+2016-02-10T13:29:27-05:00	Supporting Mac users is the worst.
