@@ -4,7 +4,7 @@ twtfile = ~/Documents/twtxt/twtxt.txt
 twturl = https://twtxt.mylesb.ca/
 check_following = True
 use_pager = True
-pre_tweet_hook = "s3cmd get s3://twtxt.mylesb.ca/twtxt.txt {twtfile}
+pre_tweet_hook = "s3cmd --force get s3://twtxt.mylesb.ca/twtxt.txt {twtfile}"
 post_tweet_hook = "s3cmd --acl-public put {twtfile} s3://twtxt.mylesb.ca/twtxt.txt"
 
 [following]
