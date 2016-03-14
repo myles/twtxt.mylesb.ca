@@ -9,3 +9,5 @@
 2016-02-16T12:04:45-05:00	Frank Lloyd Wright on Arrogance https://www.youtube.com/watch?v=muoVqVZ7RlM
 2016-03-07T21:49:18:05:00	Trying out posting from the iOS application Drafts.
 2016-03-13T19:02:03-04:00	Got Let's Encrypt running on my server so now my TwTxt feed is accessible though HTTPS.
+2016-03-13T19:19:58-04:00	@<kdave https://kdave.github.io/twtxt.txt> My TwTxt feed is fixed now.
+2016-03-14T08:04:18-05:00	John Oliver talks about an individual's right to encryption http://youtu.be/zsjZ2r9Ygzw
