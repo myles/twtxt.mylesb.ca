@@ -11,3 +11,4 @@
 2016-03-13T19:02:03-04:00	Got Let's Encrypt running on my server so now my TwTxt feed is accessible though HTTPS.
 2016-03-13T19:19:58-04:00	@<kdave https://kdave.github.io/twtxt.txt> My TwTxt feed is fixed now.
 2016-03-14T08:04:18-05:00	John Oliver talks about an individual's right to encryption http://youtu.be/zsjZ2r9Ygzw
+2016-03-14T15:15:05-04:00	Trying out a new way to run post hooks.
