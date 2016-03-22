@@ -39,6 +39,8 @@ import re
 
 import click
 
+from twtxt.config import Config
+
 log_parts = [
     r'(?P<host>\S+)',       # host %h
     r'\S+',                 # indent %l (unused)
@@ -53,7 +55,9 @@ log_parts = [
 
 log_pattern = re.compile(r'\s+'.join(log_parts)+r'\s*\Z')
 
-twtxt_pattern = re.compile(r'(?P<agent>\S+) \(\+(?P<url>\S+); @(?P<username>\S+)\)')
+twtxt_pattern = re.compile(r'(?P<agent>\S+) \(\+(?P<url>\S+); '
+                           '@(?P<username>\S+)\)')
+
 
 def get_access_log(access_log_filename):
     lines = []
@@ -77,7 +81,17 @@ def get_twtxt_followers(access_log):
         if match:
             followers.append(match.groupdict())
 
-    return [dict(tupleized) for tupleized in set(tuple(item.items()) for item in followers)]
+    return [dict(tupleized) for tupleized in set(tuple(item.items())
+            for item in followers)]
+
+
+def check_if_following(follower):
+    config = Config.discover()
+
+    if config.get_source_by_nick(follower):
+        return True
+
+    return False
 
 
 @click.command()
@@ -88,7 +102,12 @@ def main(access_log_file):
     output = []
 
     for follower in followers:
-        output.append('@%(username)s - %(url)s' % follower)
+        if check_if_following(follower['username']):
+            output.append(click.style('✓ @%(username)s - %(url)s' % follower,
+                                      fg='green'))
+        else:
+            output.append(click.style('✗ @%(username)s - %(url)s' % follower,
+                                      fg='red'))
 
     click.echo_via_pager('\n'.join(set(output)))
 
