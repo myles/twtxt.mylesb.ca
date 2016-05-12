@@ -13,3 +13,4 @@
 2016-03-14T08:04:18-05:00	John Oliver talks about an individual's right to encryption http://youtu.be/zsjZ2r9Ygzw
 2016-03-14T15:15:05-04:00	Trying out a new way to run post hooks.
 2016-03-22T10:28:09-04:00	Made a simple Python script to get your TwTxt followers from your access.log file https://git.io/vaH7j
+2016-05-12T09:10:36-04:00	The hottest trend in Web design is making intentionally ugly, difficult sites https://www.washingtonpost.com/news/the-intersect/wp/2016/05/09/the-hottest-trend-in-web-design-is-intentionally-ugly-unusable-sites/ (I would call it fun instead of ugly).
