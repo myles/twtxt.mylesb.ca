@@ -99,15 +99,15 @@ def check_if_following(follower):
 def main(access_log_file):
     access_log = get_access_log(access_log_file)
     followers = get_twtxt_followers(access_log)
-    output = []
+    out = []
 
     for follower in followers:
         if check_if_following(follower['username']):
-            output.append(click.style('✓ @%(username)s - %(url)s' % follower,
-                                      fg='green'))
+            out.append(click.style('✓ @{username} - {url}'.format(**follower),
+                                   fg='green'))
         else:
-            output.append(click.style('✗ @%(username)s - %(url)s' % follower,
-                                      fg='red'))
+            out.append(click.style('✗ @{username} - {url}'.format(**follower),
+                                   fg='red'))
 
     click.echo_via_pager('\n'.join(set(output)))
 
