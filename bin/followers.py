@@ -109,7 +109,7 @@ def main(access_log_file):
             out.append(click.style('✗ @{username} - {url}'.format(**follower),
                                    fg='red'))
 
-    click.echo_via_pager('\n'.join(set(output)))
+    click.echo_via_pager('\n'.join(set(out)))
 
 
 if __name__ == "__main__":
