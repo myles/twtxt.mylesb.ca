@@ -6,3 +6,6 @@ cd ~/Documents/twtxt
 git add twtxt.txt
 git commit -m "Updated 'twtxt.txt' file on `date`."
 
+if [ -d "/keybase/public/myles" ]; then
+    cp $1 /keybase/public/myles/twtxt.txt
+fi
